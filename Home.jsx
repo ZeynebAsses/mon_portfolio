@@ -2,13 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const skills = ["HTML", "CSS",  "React", "Node.js"];
+  const skills = ["HTML", "CSS",  "React"];
 
   return (
-    <div style={{ textAlign: "center", marginTop: "5rem" }}>
-      <h1>Bienvenue sur le portfolio</h1>
+    <div style={{ textAlign: "center", marginTop: "5rem", backgroundImage: "url('/assets/background.jpg')", 
+      height: "100vh",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        margin: 0,
+        padding: 0
+         }}>
+      <h1>Bienvenue sur le portfolio de :</h1>
       <h2>Zaineb - Étudiante a ISGB</h2>
-      <img src="/assets/image.png" alt="Profile" style={{ width: "200px", borderRadius: "50%" }} />
+      <img src="./assets/image.png" alt="Profile" style={{ width: "150px", borderRadius: "50%" }} />
       <div style={{ marginTop: "1rem" }}>
         <Link to="/projects" style={{ marginRight: "15px" }}>Voir mes projets</Link>
         <Link to="/contact">Me contacter</Link>
